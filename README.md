@@ -1,4 +1,4 @@
-# Fed-Heart-Disease — Initial Dataset Exploration
+# Fed-Heart-Disease Initial Dataset Exploration
 
 This repository contains the initial exploratory data analysis notebook for the FLamby Fed-Heart-Disease dataset.
 
