@@ -2,9 +2,9 @@ name: fed-heart-disease-eda
 channels:
   - conda-forge
 dependencies:
-  - python=3.11
-  - pandas
-  - numpy
+  - python=3.10
+  - pandas=2.3
+  - numpy=1.26
   - jupyterlab
   - ipykernel
   - wget
