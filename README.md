@@ -16,18 +16,38 @@ The objective is to explore the dataset and prepare it for comparing Local Learn
 ## Repository Structure
 
 ```text
-Federation-Project/
-│
-├── FLamby-main/
-│   └── flamby/
-│       └── datasets/
-│           └── fed_heart_disease/
-│               └── dataset_creation_scripts/
-│                   └── heart_disease_dataset/
-│
-├── 01_dataset.ipynb
+fed-heart-disease-project/
+├── notebooks/
+│   └── 01_dataset.ipynb
+├── environment.yml
 ├── README.md
-└── environment.yml
+├── .gitignore
+├── data/
+│   └── heart_disease_dataset/
+│       ├── processed.cleveland.data
+│       ├── processed.hungarian.data
+│       ├── processed.switzerland.data
+│       └── processed.va.data
+└── FLamby/
+```
+## Environment Setup
+
+Create the Conda environment:
+
+```bash
+conda env create -f environment.yml
+```
+
+Activate it:
+
+```bash
+conda activate fed-heart-disease-eda
+```
+
+Launch Jupyter Notebook:
+
+```bash
+jupyter notebook
 ```
 
 ## Dataset Download Instructions
@@ -48,26 +68,6 @@ https://github.com/owkin/FLamby/tree/main/flamby/datasets/fed_heart_disease
 
 ```text
 FLamby-main/flamby/datasets/fed_heart_disease/dataset_creation_scripts/heart_disease_dataset/
-```
-
-## Environment Setup
-
-Create the Conda environment:
-
-```bash
-conda env create -f environment.yml
-```
-
-Activate it:
-
-```bash
-conda activate fed-heart-disease-eda
-```
-
-Launch Jupyter Notebook:
-
-```bash
-jupyter notebook
 ```
 
 ## Running the Notebook
